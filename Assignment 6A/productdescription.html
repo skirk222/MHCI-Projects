@@ -3,9 +3,30 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="PUI Assignment 5 Product Description" />
+        <meta name="description" content="PUI Assignment 5/6A Product Description" />
         <link href="productdescription.css" rel="stylesheet" type="text/css">
         <!-- <script type="text/javascript" src="main.js"></script> -->
+        <script>
+            function updateColorOrange(){
+                var orangeHarness = document.getElementById("harnesspic");
+                orangeHarness.src = "orangeharness.png";
+
+            }
+            function updateColorBlue(){
+                var blueHarness = document.getElementById("harnesspic");
+                blueHarness.src = "blueharness.png";
+            }
+            function updateColorPurple(){
+                var purpleHarness = document.getElementById("harnesspic");
+                purpleHarness.src = "purpleharness.png";
+            }
+            function updateColorPink(){
+                var pinkHarness = document.getElementById("harnesspic");
+                pinkHarness.src = "harness.png";
+                
+            }
+        </script>
+        <!-- https://youtu.be/95bT2U4-uAg javascript reference for changing the source of an image-->
         <title>Harness Product Details</title>
     </head>
 
@@ -25,7 +46,7 @@
             </header>
         
             <div class="flex-container">
-                <img class="products" id="original" src= "harness.png">
+                <img class="products" id="harnesspic" src= "" alt="click a color button!">
                 <div class="flex-items">
                     <ul>
                         <h1 class="listed-item">Dog Harness</h1>
@@ -33,13 +54,16 @@
                         <img class="listed-images" id="stars" src="Stars.png">
                         <li class="listed-item" id="reviews"><u>10 Reviews</u></li>
                     <div class="buttons">
-                        <button class="colorButton" onclick="updateColor()"><img  id="orangepaw" src= "OrangePaw.png"></button>
-                            <!-- <input type="button" class="colorSelect" value="Select" onclick="updateColorOrange()"/> -->
-                        <button class="colorButton" onclick="updateColor()"><img  id="bluepaw" src="BluePaw.png"></button>
+                        <input type="button" class="colorSelect" value="Fire Orange" onClick="updateColorOrange()"/>
+                        <input type="button" class="colorSelect" value="Crazyberry" onClick="updateColorBlue()"/>
+                        <input type="button" class="colorSelect" value="Blackberry" onClick="updateColorPurple()"/>
+                        <input type="button" class="colorSelect" value="Strawberry" onClick="updateColorPink()"/>
+                        <!-- <button class="colorButton" onclick="updateColor()"><img  id="orangepaw" src= "OrangePaw.png"></button> -->
+                        <!-- <button class="colorButton" onclick="updateColor()"><img  id="bluepaw" src="BluePaw.png"></button> -->
                             <!-- <button type="button" class="colorSelect" value="Select" on click="updateColorBlue()"/> -->
-                        <button class="colorButton" onclick="updateColor()"><img id="purplepaw" src= "PurplePaw.png"></button>
+                        <!-- <button class="colorButton" onclick="updateColor()"><img id="purplepaw" src= "PurplePaw.png"></button> -->
                             <!-- <input type="button" class="colorSelect" value="Select" on click="updateColorPurple()"/> -->
-                        <button class="colorButton" onclick="updateColor()"><img id="pinkpaw" src="PinkPaw.png"></button>
+                        <!-- <button class="colorButton" onclick="updateColor()"><img id="pinkpaw" src="PinkPaw.png"></button> -->
                             <!-- <input type="button" class="colorSelect" value="Select" on click="updateColorPink()"/> -->
                         <br></br> 
                     </div>
