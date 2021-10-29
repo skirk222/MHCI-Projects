@@ -192,3 +192,8 @@ p {
     grid-gap: 5px;
     grid-template-columns: 40px 60px 40px 80px;
 }
+
+#original {
+    width: 400px;
+    height: 400px;
+}

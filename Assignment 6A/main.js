@@ -1,6 +1,6 @@
 function updateColor() {
     var Harness_Image = document.getElementById ('original')
-    if (Harness_Image.src.match("harness.png")) {
+    if Harness_Image.src.match("harness.png") {
         Harness_Image.src = "orangeharness.png";
         Harness_Image.src = "blueharness.png";
         Harness_Image.src= "purpleharness.png";
