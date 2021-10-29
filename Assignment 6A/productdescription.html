@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="PUI Assignment 5 Product Description" />
         <link href="productdescription.css" rel="stylesheet" type="text/css">
-        <script type="text/javascript" src="main.js"></script>
+        <!-- <script type="text/javascript" src="main.js"></script> -->
         <title>Harness Product Details</title>
     </head>
 
@@ -25,7 +25,7 @@
             </header>
         
             <div class="flex-container">
-                <img class="products" src= "harness.png">
+                <img class="products" id="original" src= "harness.png">
                 <div class="flex-items">
                     <ul>
                         <h1 class="listed-item">Dog Harness</h1>
@@ -33,13 +33,13 @@
                         <img class="listed-images" id="stars" src="Stars.png">
                         <li class="listed-item" id="reviews"><u>10 Reviews</u></li>
                     <div class="buttons">
-                        <button><img class="listed-images" id="orangepaw" src= "OrangePaw.png" onclick="updateColorOrange()"></button>
+                        <button><img class="colorButton" id="orangepaw" src= "OrangePaw.png" onclick="updateColorOrange()"></button>
                             <!-- <input type="button" class="colorSelect" value="Select" onclick="updateColorOrange()"/> -->
-                        <button><img class="listed-images" id="bluepaw" src="BluePaw.png" onclick="updateColorBlue()"></button>
+                        <button onclick="updateColor()"><img class="colorButton" id="bluepaw" src="BluePaw.png"></button>
                             <!-- <button type="button" class="colorSelect" value="Select" on click="updateColorBlue()"/> -->
-                        <button><img class="listed-images" id="purplepaw" src= "PurplePaw.png"onclick="updateColorPurple()"></button>
+                        <button><img class="colorButton" id="purplepaw" src= "PurplePaw.png"onclick="updateColor()"></button>
                             <!-- <input type="button" class="colorSelect" value="Select" on click="updateColorPurple()"/> -->
-                        <button><img class="listed-images" id="pinkpaw" src="PinkPaw.png" onclick="updateColorPink()"></button>
+                        <button><img class="colorButton" id="pinkpaw" src="PinkPaw.png" onclick="updateColor()"></button>
                             <!-- <input type="button" class="colorSelect" value="Select" on click="updateColorPink()"/> -->
                         <br></br> 
                     </div>
@@ -75,6 +75,19 @@
                 <li class="footeritems">160 Mountain Road, Pittsburgh, PA 15120</li>
             </ul>
         </div>
+        <script type="text/javascript">
+        function changeImage(a) {
+            document.getElementById("original").src = a.src
+        }
+        // </script>
+        <!-- <div id = "main-img"> -->
+            <!-- <img id="img" src="harness.png"> -->
+        <!-- </div> -->
+        <!-- <div id ="thumb_img"> -->
+            <!-- <img src='PinkPaw.png' onclick='changeImage("orangeharness.png");'> -->
+            <!-- <img src='PurplePaw.png' onclick='changeImage("purpleharness.png");'> -->
+            <!-- <img src='BluePaw.png' onclick='changeImage("blueharness.png");'> -->
+        <!-- </div> -->
         
     </body>
 
