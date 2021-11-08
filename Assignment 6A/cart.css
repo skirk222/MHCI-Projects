@@ -5,12 +5,24 @@ body {
     display: grid;
     padding-top: 20px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 50px 1fr;
     grid-template-areas:
-    "product-names item-prices quantities total-prices"
+    "header summary"
     "items summary"
 }
 
+#cart-container {
+    display: grid;
+    grid-area: header;
+    grid-template-columns: 1fr 180px 150px 150px 150px;
+}
+
+#cart-container h4 {
+    height: 20px;
+}
+#items {
+    grid-area: items;
+}
 .item {
     /* border: 1px solid black;
     margin: 24px; */
@@ -18,30 +30,52 @@ body {
     /* padding-top: 200px; */
     padding-left: 24px;
     grid-template-columns: 1fr 180px 150px 150px 150px;
-    grid-template-rows: 40px 50px 50px 50px 50px 40px;
+    grid-template-rows: 40px 50px 50px 50px;
     grid-template-areas:
     "image name item-price quantity total-price"
-    "image style-number . . ."
     "image size . . ."
     "image color . . ."
     ". . gift-wrap edit remove"
-
 }
+#color {
+    grid-area: color;
+}
+
+#size{
+    grid-area: size;
+}
+
+#item-price{
+    grid-area: item-price;
+}
+
+#quantity {
+    grid-area: quantity;
+}
+
+#total-price{
+    grid-area: total-price;
+}
+
 #gift-wrap {
+    grid-area: gift-wrap;
     color: grey;
     font-weight: 100;
 }
 
 #edit {
+    grid-area: edit;
     color: grey;
     font-weight: 100;
 }
 
 #remove {
+    grid-area: remove;
     color: grey;
     font-weight: 100;
 }
 .order-summary{
+    grid-area: summary;
     border: 1px solid black;
     margin: 24px;
     padding: 30px;
@@ -65,6 +99,12 @@ body {
 
 .image {
     width: 200px;
+    height: auto;
+    grid-area: image;
+}
+
+#harnesspic {
+    width: 100px;
     height: auto;
     grid-area: image;
 }

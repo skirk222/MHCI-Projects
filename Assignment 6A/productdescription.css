@@ -117,7 +117,7 @@ header {
     border: 1px solid black;
 }
 
-#pinkpaw {
+/* #pinkpaw {
     padding-left: 0px;
     width: 50px;
     height: 55px;
@@ -136,7 +136,7 @@ header {
     padding-left: 0px;
     width: 50px;
     height: auto;
-}
+} */
 
 .stars {
     float: left;
@@ -187,13 +187,13 @@ p {
     display: flex;
     justify-content: left;
 }
-.morebuttons {
+.productOpton {
     display: grid;
     grid-gap: 5px;
     grid-template-columns: 40px 60px 40px 80px;
 }
 
 #harnesspic {
-    width: 400px;
-    height: 400px;
+    width: 20%;
+    height: auto;
 }

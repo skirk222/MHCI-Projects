@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="PUI Assignment 6A Cart" />
         <link href="cart.css" rel="stylesheet" type="text/css">
+        <script src="main.js" defer></script>
+        <script src="cart.js" defer></script> 
         <title>Cart Assignment 6A</title>
     </head>
 <body>
@@ -14,7 +16,7 @@
             <ul class="navitems">
                 <li class="top-right">Register</li>
                 <li class="top-right">Log in</li>
-                <li class="top-right">Cart</li>
+                <li class="top-right" a href="cart.html" id="cart-label">Cart</li>
                 <li class="top-right" a href="productbrowsing.html">Dogs</li>
                 <li class="top-right">Cats</li>
             </ul>
@@ -22,35 +24,14 @@
     </header>
         <h1>Shopping Cart</h1>
         <div class="big-grid">
-            <div class="item" id="items">
+            <div class="cart-header" id="cart-container">
+                <div></div>
                 <h4 id="product-names">Item</h4>
                 <h4 id="item-prices">Price</h4>
                 <h4 id="quantities">Quantity</h4>
                 <h4 id="total-prices">Total Price</h4>
-                <img class="image" src="harness.png" alt="harness">
-                <h4 id="name">Dog Harness</h5>  
-                <h5 id="item-price">$25.00</h5>
-                <h5 id="quantity">1</h5>
-                <h5 id="total-price">$25.00</h5>
-                <h5 id="style-number"><b>Style:</b> 61628262</h5>
-                <div></div>
-                <div></div>
-                <div></div>
-                <h5 id="size"><b>Size:</b> Small</h5>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <h5 id="color"><b>Color:</b> Strawberry</h5>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <h5 id="gift-wrap"><u>Gift Wrap</u></h5>
-                <h5 id="edit"><u>Edit</u></h5>
-                <h5 id="remove"><u>Remove</u></h5>
             </div>
+            <div id="items"></div>
             <div class="order-summary" id="summary">
                 <h2 id="order-summary-title">Order Summary</h2>
                     <div class="info" id="pay-info">
@@ -71,7 +52,5 @@
         <li class="footeritems">Social</li>
         <li class="footeritems">160 Mountain Road, Pittsburgh, PA 15120</li>
     </ul>
-
-    
 </body>
 
